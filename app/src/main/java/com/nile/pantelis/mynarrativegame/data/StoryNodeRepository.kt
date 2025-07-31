@@ -1,5 +1,7 @@
 package com.nile.pantelis.mynarrativegame.data
 
+import android.util.Log
+
 class StoryNodeRepository {
 
     private val storyNodeOne = StoryNode(
@@ -107,5 +109,9 @@ class StoryNodeRepository {
 
     fun getStartingStoryNode(): StoryNode {
         return getAllStoryNodes()["StoryNodeOne"]!!
+    }
+
+    fun getNodeByName(name: String): StoryNode {
+        return getAllStoryNodes()[name]!!
     }
 }

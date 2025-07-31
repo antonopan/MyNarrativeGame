@@ -5,8 +5,6 @@ data class StoryNode(
     val narrativePiece: String,
     val optionOne: String?,
     val optionTwo: String?,
-
-
     ) {
     var optionOnePath: StoryNode? = null
     var optionTwoPath: StoryNode? = null
